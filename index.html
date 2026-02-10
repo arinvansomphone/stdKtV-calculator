@@ -50,7 +50,7 @@
       <div class="input-question">
         <label for="height">Height:</label><br>
         <div style="display: flex; align-items: center; flex-wrap: wrap;"><input type="number" id="height"
-            class="numeric-input" min="100" required><span style="margin-left: 5px;"> cm</span><span
+            class="numeric-input" step="any" min="100" required><span style="margin-left: 5px;"> cm</span><span
             id="height-warning" style="color: red; margin-left: 10px; display: none;">Value outside normal range,
             under 100 cm?</span>
         </div>
@@ -59,7 +59,7 @@
       <div class="input-question">
         <label for="age">Age:</label><br>
         <div style="display: flex; align-items: center; flex-wrap: wrap;"><input type="number" id="age"
-            class="numeric-input" required><span style="margin-left: 5px;"> yrs</span><span id="age-warning"
+            class="numeric-input" step="any" required><span style="margin-left: 5px;"> yrs</span><span id="age-warning"
             style="color: red; margin-left: 10px; display: none;">Value outside normal range, age under 18?</span>
         </div>
       </div>
@@ -67,7 +67,7 @@
       <!-- remaining numeric inputs -->
       <div class="input-question"><label>End treatment weight:</label><br>
         <div style="display: flex; align-items: center; flex-wrap: wrap;"><input type="number" id="weight"
-            class="numeric-input" required><span style="margin-left: 5px;"> kg</span><span id="weight-warning"
+            class="numeric-input" step="any" required><span style="margin-left: 5px;"> kg</span><span id="weight-warning"
             style="color: red; margin-left: 10px; display: none;">Value outside normal range, weight under 30 kg?</span>
         </div>
       </div>
@@ -78,10 +78,10 @@
       </div>
 
       <div class="input-question"><label>Dialysis time:</label><br>
-        <div><input type="number" id="time" class="numeric-input" required><span> min</span></div>
+        <div><input type="number" id="time" class="numeric-input" step="any" required><span> min</span></div>
       </div>
       <div class="input-question"><label>Weekly UF:</label><br>
-        <div><input type="number" id="weeklyuf" class="numeric-input" required><span> L/wk</span></div>
+        <div><input type="number" id="weeklyuf" class="numeric-input" step="any" required><span> L/wk</span></div>
       </div>
       <div class="input-question"><label>Kru:</label><br>
         <div><input type="number" id="kru" class="numeric-input" step="any" required><span> mL/min</span>
